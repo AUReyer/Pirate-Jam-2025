@@ -36,7 +36,7 @@ if (running) {
 			y+=lengthdir_y(1,aimDir);
 		}
 		running = false;
-		//aiming = true;
+		aiming = true;
 		aimNodeSize = 0.1;
 		
 		// set dir
