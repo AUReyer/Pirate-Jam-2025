@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"clicked_on_gui",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"clicked_on_gui",
+  "parent":{
+    "name":"Mouse",
+    "path":"folders/Scripts/Mouse.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

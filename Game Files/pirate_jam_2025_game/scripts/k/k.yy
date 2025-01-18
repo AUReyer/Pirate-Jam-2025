@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"k",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"k",
+  "parent":{
+    "name":"Helpers",
+    "path":"folders/Scripts/Helpers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
