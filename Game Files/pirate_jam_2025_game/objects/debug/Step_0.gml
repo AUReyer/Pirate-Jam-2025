@@ -1,0 +1,1 @@
+if (click(mb_middle)) particle_effect(mouse_x,mouse_y,o_line_part,8,60,c_white,0.2,true);

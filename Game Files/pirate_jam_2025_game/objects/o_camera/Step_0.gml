@@ -1,5 +1,5 @@
-camHspd = lerp(camHspd,(1-camXOffset)*0.5,0.2);
-camVspd = lerp(camVspd,(1-camYOffset)*0.5,0.2);
+camHspd = lerp(camHspd,(0-camXOffset)*0.5,0.2);
+camVspd = lerp(camVspd,(0-camYOffset)*0.5,0.2);
 
 camXOffset +=camHspd;
 camYOffset +=camVspd;

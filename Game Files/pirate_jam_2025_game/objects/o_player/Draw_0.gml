@@ -13,4 +13,4 @@ if (aiming) {
 }
 
 draw_sprite_ext(sprite_index,0,x,y,1,1,drawAngle,c_white,1);
-draw_text(20,20,anglDif);
+draw_text(x,y-20,baseDir);
