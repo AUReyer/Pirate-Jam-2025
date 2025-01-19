@@ -13,15 +13,22 @@ if (aiming) {
 
 	var wallInst = noone;
 	var checkX = x+lengthdir_x(aimRadius,aimDir);
-	var checkY = y+lengthdir_y(aimRadius,aimDir);;
+	var checkY = y+lengthdir_y(aimRadius,aimDir);
 	aimLineLen = 0;
-
+	
+	image_xscale = 1;
+	image_yscale = 1;
+	image_angle = aimDir;
 	while (wallInst == noone) {
 		aimLineLen++;
 		checkX+=lengthdir_x(1,aimDir);
 		checkY+=lengthdir_y(1,aimDir);
+
 		wallInst = instance_place(checkX,checkY,wall_parent);
 	}
+	image_xscale = 1;
+	image_yscale = 1;
+	image_angle = 0;
 	
 	if (aimLineLen < runSpd) aimNodeSizeTrgt = 0 else aimNodeSizeTrgt = 1;
 	if (aimNodeSizeTrgt == 1) {
