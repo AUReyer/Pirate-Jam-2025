@@ -1,1 +1,2 @@
+randomize();
 full = false;

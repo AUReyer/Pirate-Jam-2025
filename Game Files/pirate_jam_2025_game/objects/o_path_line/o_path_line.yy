@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"o_wall",
+  "%Name":"o_path_line",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_wall",
+  "name":"o_path_line",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game World",
-    "path":"folders/Objects/Game World.yy",
+    "name":"Colliders",
+    "path":"folders/Objects/Colliders.yy",
   },
   "parentObjectId":{
-    "name":"wall_parent",
-    "path":"objects/wall_parent/wall_parent.yy",
+    "name":"depth_parent",
+    "path":"objects/depth_parent/depth_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_wall",
-    "path":"sprites/s_wall/s_wall.yy",
+    "name":"s_path_carver",
+    "path":"sprites/s_path_carver/s_path_carver.yy",
   },
   "spriteMaskId":null,
   "visible":true,

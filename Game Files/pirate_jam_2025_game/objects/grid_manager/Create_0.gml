@@ -2,8 +2,8 @@ var rowLen = grid_w/grid_cell_size;
 var colLen = room_height/grid_cell_size;
 
 var tileId = 0;
-for (var i = 0; i < colLen; i++;) {
-	for (var j = 0; j < rowLen; j++;) {
+for (var i = -1; i < colLen+1; i++;) {
+	for (var j = -1; j < rowLen+1; j++;) {
 		var xx = j*grid_cell_size;
 		var yy = i*grid_cell_size;
 		with (create(xx,yy,o_grid_cell)) {
