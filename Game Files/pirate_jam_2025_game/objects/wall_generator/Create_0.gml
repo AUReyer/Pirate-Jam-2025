@@ -60,3 +60,19 @@ with (o_explosion_point) {
 }
 
 with (o_explosion_point) instance_destroy();
+
+// spawn enemies
+var availableTiles = [];
+with (o_grid_cell) {
+	if (x > 0 and x < room_width and y > 0 and y < room_height) {
+		if (!position_meeting(x,y,o_wall)) array_push(availableTiles,id);
+	}
+}
+
+availableTiles = array_shuffle(availableTiles);
+
+var enems = 8;
+for (var i = 0; i < enems; i++;) {
+	var tile = availableTiles[i];
+	create(tile.x+grid_cell_size/2,tile.y+grid_cell_size/2,o_test_enemy);
+}
