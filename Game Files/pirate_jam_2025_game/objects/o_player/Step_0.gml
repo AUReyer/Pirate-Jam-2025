@@ -81,6 +81,7 @@ if (running) {
 		}
 		
 		drawAngle = baseDir;
+		endTurnCool = 20;
 
 	}
 	
@@ -105,5 +106,9 @@ if (running) {
 	//if (hitEnem) game_end();
 }
 
+if (endTurnCool > 0) {
+	endTurnCool--;
+	if (endTurnCool == 0) state_manager.change_state(states.enemyTurn);
+}
 
 

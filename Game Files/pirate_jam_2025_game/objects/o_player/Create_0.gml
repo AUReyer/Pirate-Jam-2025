@@ -30,7 +30,10 @@ frozenY = 0;
 
 catchLastEnem = false;
 
+endTurnCool = 0;
+
 function launch() {
+	state_manager.change_state(states.playerTurnExecuting);
 	with (o_enem_aim_checker) instance_destroy();
 	aiming = false;
 	running = true;
@@ -83,4 +86,14 @@ function hit_enemy(enemyInst) {
 	} else {
 		nextEnem = noone;
 	}
+	
+	if (global.playerArmor > 0) lose_armor() else lose_hp();
+}
+
+function lose_armor() {
+	global.playerArmor--;
+}
+
+function lose_hp() {
+	global.playerHp--;
 }

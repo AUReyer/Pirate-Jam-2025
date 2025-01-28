@@ -16,3 +16,11 @@ function change_state(state) {
 }
 
 change_state(states.playerTurn);
+
+//
+enemMoveOrder = [];
+enemMoveIndex = 0;
+enemMoveTimer = 0;
+enemMoveWait = 2;
+enemCountdown = true;
+enemiesMoving = false;
